@@ -1,2 +1,11 @@
 *
-{color:red}
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: robot;
+}
+#personal--logo
+{
+    width:50px;
+}
