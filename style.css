@@ -1,11 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap');
 *
 {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: robot;
+    font-family: "Roboto", sans-serif;
 }
-#personal--logo
+li{
+    list-style-type: none ;
+}
+section{
+    background-color: rgb(245,245,245);
+}
+/***   Landing page   ***/
+#langing-page
+{
+    min-height: 100%;
+}
+.header
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+.title--secondary, .orange{
+    color:#be8032;
+
+}
+/***   Navigation   ***/
+nav{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height:100px;
+}
+#personal-logo
 {
     width:50px;
+    height:50px;
+}
+.nav__link--list
+{
+ display:flex ;
+}
+.nav__link{
+    margin:0 12px;
+}
+.nav__link--anchor{
+    text-decoration: none;
+    font-size: 16px;
+    color:#242424;
+    font-weight:700px;
+}
+.fa-adjust
+{
+    font-size: 20px;
 }
