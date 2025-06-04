@@ -12,22 +12,57 @@ li{
 section{
     background-color: rgb(245,245,245);
 }
+.title{
+    font-size:76px;
+    margin-bottom:12px;
+    text-align: left;
+    line-height: 1;
+}
+.title--secondary, .orange{
+    color:#be8032;
+}
+.click:hover
+{
+    transform:scale(1.1);
+}
 /***   Landing page   ***/
 #langing-page
 {
-    min-height: 100%;
+    min-height: 100vh;
 }
 .header
 {
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%, -50%)
+    transform:translate(-50%, -50%);
+    width:100%;
+    max-width: 1000px;
 }
-.title--secondary, .orange{
-    color:#be8032;
+.header__para
+{
+    font-size: 24px;
+    line-height: 2;
+    max-width: 450px;
+}
+.social__list
+{
+    margin-top:16px;
+    display: flex;
+}
+.social__link
+{
+    background-color: #f06449;
+    color: white;
+    padding: 6px;
+    width:32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+}
 
-}
 /***   Navigation   ***/
 nav{
     display:flex;
