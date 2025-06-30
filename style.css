@@ -23,15 +23,16 @@ section{
     background-color: rgb(245,245,245);
 }
 input, textarea{
-    width: 100%;
-    background-color: #242424;
-    color:white;
-  outline: none;
-  border:1px solid #c0c4cc;
+width: 100%;
+background-color: #242424;
+color:white;
+outline: none;
+border:3px solid #c0c4cc;
 border-top:none;
 border-left: none;
 border-right:none;
 height: 40px;
+transition: all 300ms ease;
 }
 textarea{
    resize: vertical;
@@ -41,6 +42,12 @@ textarea{
 label{
     font-size: 14px;
     font-weight: bold;
+}
+input:hover, textarea:hover{
+    border-color: #f06449;
+}
+input:focus, textarea:focus{
+    border-color: #f06449;
 }
 .container{
     padding: 50px 0;
@@ -268,7 +275,7 @@ nav{
 }
  .language__name{
     position: absolute;
-    bottom: -18px;
+    bottom: -10px;
     transform:scale(0);
     transition: all 300ms ease;
  }
@@ -296,6 +303,65 @@ nav{
 }
 .form__item{
     margin-bottom: 20px;
+}
+.form__item{
+    margin-bottom: 20px;
+}
+.form__submit
+{
+    background-color: #f06449;
+    border:2px solid #f06449;
+    color:white;
+    font-weight: 700;;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+}
+.form__submit:hover{
+    background-color: transparent;
+    border-color: #fff;
+}
+.form__submit:active{
+    border-color: #f06449;
+    color: #f06449;
+}
+.modal__overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal__overlay--loading
+{
+   background-color: blue;
+    font-size: 80px;
+    z-index: -1;
+}
+.modal__overlay--success
+{   background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 28px;
+
+}
+
+.fa-spinner
+{
+    animation: spinner 750s linear infinite;
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }   
 }
 
 /**  Projects **/
