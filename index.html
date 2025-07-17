@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarojani Powar</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/ad1ab7de96.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/ad1ab7de96.js" crossorigin="anonymous" ></script>
+    
     <script src="index.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "f4nj8ADMO_NsaWaEI",
+      });
+   })();
+</script>
   </head>
   <body>
     <section id="langing-page">
@@ -102,7 +107,7 @@
             💻 Frontend Developer.
           </h4>
           <p class="model__para">
-            Hey there, I’m Saroj! 💻<br
+            Hey there, I’m Saroj! 💻<br>
             <b class="orange">Frontend Developer.</b> 
             <br> I am currently dedicated to
             deepening my coding expertise and applying it 
@@ -138,24 +143,22 @@
           <h3 class="modal__title">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--about">
             I am currently open to new opportunities.</h4>
-            <form id="contact__form">
+            <form id="contact__form" onsubmit="contact(event)">
               <div class="form__item">
-                <label for="name" class="form__item--label">Name</label>
-                <input type="text" name="user__name" class="input" required ></input>
+                <label  class="form__item--label">Name</label>
+                <input type="text" name="user_name" class="input"  ></input>
                 </div>
                 <div class="form__item">
-                <label for="email" class="form__item--label">Email</label>
-                <input type="email" name="usere__email" class="input" required ></input>
+                <label class="form__item--label">Email</label>
+                <input type="email" name="user_email" class="input"  ></input>
                 </div>
                 <div class="form__item">
                 <label for="name" class="form__item--label">Message</label>
-                <textarea type="text" name="message" class="input" required ></textarea>
+                <textarea type="text" name="message" class="input" ></textarea>
               </div>
-              <div class="form__item">
-                <button type="submit" class="form__submit">
+                <button type="submit" id="conact__submit" class="form__submit">
                   Send it my way
                 </button>
-              </div>
             </form>
             <div class="modal__overlay modal__overlay--loading">
               <i class="fas fa-spinner"></i>
