@@ -449,7 +449,7 @@ nav{
     margin:16px 0;
 }
 
-/****   footer   ****/
+/******  footer  *****/
 footer{
 background-color:#242424;
 display: flex;
@@ -470,7 +470,8 @@ align-items: center;
    background-color: white;
    border-radius: 20px;
 }
-.footer__social--list{
+.footer__social--list
+{
     width: 100%;
     max-width: 500px;
     display: flex;
@@ -478,6 +479,7 @@ align-items: center;
     margin: 28px 0;
 }
 .footer__social--link,
-.footer__copyright{
+.footer__copyright
+{
     color:white;
 }
