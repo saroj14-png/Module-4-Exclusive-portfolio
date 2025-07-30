@@ -23,12 +23,16 @@ function contact(event){
       });
 
         }
-        let ismodalOpen = false;
-        function toggleModel() {
-            isModalopen = !ismodalOpen;
-            if (isModalopen) {
+
+
+        let isModalOpen = false;
+        function toggleModal() {
+            
+            if (isModalOpen) {
                 return document.body.classList.remove("modal--open");
+                isModalOpen=false;
             }
+            isModalOpen = true;
           //toggle modal
           document.body.classList += " modal--open";
         
