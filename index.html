@@ -26,33 +26,32 @@
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
-            <a
-              href=""
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
+            <a href="" class=
+            "nav__link--anchor 
+            link__hover-effect 
+            link__hover-effect--black"
+              >About</a>
           </li>
           <li class="nav__link">
-            <a
-              href=""
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Projects</a
-            >
+            <a href="" class=
+            "nav__link--anchor 
+            link__hover-effect 
+            link__hover-effect--black"
+              >Projects</a>
           </li>
-          <li class="nav__link">
-            <a
-              href=""
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contact</a
-            >
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="" class=
+            "nav__link--anchor 
+            link__hover-effect 
+            link__hover-effect--black"
+              >Contact</a>
           </li>
-          <li class="nav__link click">
-            <a
-              href=""
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              <i class="fas fa-adjust"> </i
-            ></a>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a href="" class=
+            "nav__link--anchor 
+            link__hover-effect 
+            link__hover-effect--black"
+            ><i class="fas fa-adjust"> </i></a>
           </li>
         </ul>
       </nav>
@@ -64,7 +63,7 @@
             I'm a <b class="orange">Frontend Software Engineer</b> strong
             passion for building web applications with great user experiences.
             <br />
-            Here's a bit more <b class="orange">about me</b>...
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>...
           </p>
           <div class="modal__languages"></div>
           <div class="social__list">
@@ -138,7 +137,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
-          <i class="fas fa-times modal__exit click" "></i>
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
