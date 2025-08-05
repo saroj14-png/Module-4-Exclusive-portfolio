@@ -4,12 +4,12 @@ let contrastToggle = false;
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += " dark-theme"
-  }
-  else {
-    document.body.classList.remove("dark-theme")
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
   }
 }
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
@@ -44,3 +44,4 @@ function toggleModal() {
   //toggle modal
   document.body.classList += " modal--open";
 }
+ 
