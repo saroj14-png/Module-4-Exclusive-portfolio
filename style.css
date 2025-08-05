@@ -117,7 +117,9 @@ nav, .scroll, .header{
     visibility: visible;
     transition: all 600ms 800ms;
 }
-.modal--open nav, .modal--open .scroll, .modal--open .header{
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header{
     opacity: 0;
     visibility: hidden;
     transition: all 400ms;
@@ -135,7 +137,7 @@ nav, .scroll, .header{
   background-color: #242424;
 }
 .dark-theme #personal-logo {
-  filter: invert(1);
+  
 }
 .dark-theme .scroll__icon {
   border-color: white;
@@ -545,4 +547,61 @@ align-items: center;
 .footer__copyright
 {
     color:white;
+}
+/** Shapes 
+shapes on the first .row
+height =15vh
+
+shapes on the second row
+height = 50vh
+
+shapes on the third row
+height =80vh
+
+shapes on the first column
+width= 5vw
+
+shapes on the second 
+width =50vw
+
+shapes on the thrid column
+width =80vw
+**/
+.shape{
+    position: fixed;
+}
+.shape--0{
+    Top: 15vh;
+    left:5vw;
+}
+.shape--1{
+    Top: 15vh;
+    left:50vw;
+}
+.shape--2{
+    Top: 15vh;
+    left:80vw;
+}
+.shape--3{
+    Top: 50vh;
+    left:5vw;
+}
+.shape--4{
+    Top: 50vh;
+    left:50vw;
+}
+.shape--5{
+    Top: 50vh;
+    left:80vw;
+}.shape--6{
+    Top: 80vh;
+    left:5vw;
+}
+.shape--7{
+    Top: 80vh;
+    left:50vw;
+}
+.shape--8{
+    Top: 80vh;
+    left:80vw;
 }
