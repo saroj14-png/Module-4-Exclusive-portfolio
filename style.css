@@ -550,22 +550,22 @@ align-items: center;
 }
 /** Shapes 
 shapes on the first .row
-height =15vh
+Top =15vh
 
 shapes on the second row
-height = 50vh
+top = 50vh
 
 shapes on the third row
-height =80vh
+top =80vh
 
 shapes on the first column
-width= 5vw
+left= 5vw
 
 shapes on the second 
-width =50vw
+left =50vw
 
 shapes on the thrid column
-width =80vw
+left =80vw
 **/
 .shape{
     position: fixed;
