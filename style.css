@@ -136,8 +136,9 @@ nav, .scroll, .header{
 .dark-theme section {
   background-color: #242424;
 }
-.dark-theme #personal-logo {
-  
+.dark-theme #personal-logo, 
+.dark-theme .footer__logo--img{
+    filter: invert(1);
 }
 .dark-theme .scroll__icon {
   border-color: white;
@@ -151,7 +152,6 @@ nav, .scroll, .header{
   color: #242424;
 }
 
- 
 
 /***   Landing page   ***/
 #langing-page
@@ -240,6 +240,7 @@ nav, .scroll, .header{
         transform:translateY(-3px);
     }
 }
+
 /****   Navigation   ****/
 nav{
     display:flex;
@@ -443,6 +444,15 @@ nav{
 }
 
 /**  Projects **/
+.project
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .section__title
 {
     text-align:center;
@@ -516,6 +526,7 @@ nav{
 
 /******  footer  *****/
 footer{
+    position: relative;
 background-color:#242424;
 display: flex;
 }
@@ -605,3 +616,68 @@ left =80vw
     Top: 80vh;
     left:80vw;
 }
+
+/*. Smallphones, tablet, large smart phones */
+@media(max-width: 768px) {
+    
+    .title{
+        font-size: 80px;
+    }
+    .header__para{
+        font-size: 20px;
+    }
+    .modal
+    {
+       top:0;
+         left:0;
+         transform: none;
+         height: auto;
+         width: 100%;
+         flex-direction: column-reverse;
+         border-radius: 0;
+    }
+    .modal__half{
+        width: 100%;
+    }
+     .modal__language{
+        width: 50%;
+    }
+    .modal__language--img{
+        width: 40%;
+    }
+  
+     .project__description{
+        left: 20px;
+        right: 20px;
+        max-width: none;
+    }
+}
+@media(max-width: 480px) {
+
+    .title{
+        font-size: 52px;    
+    }
+    .header__para{
+        font-size: 10px;
+    }
+    .nav__link:first-child{
+        display: none;
+    }
+    .prject__description{
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--para{
+        display: none;
+    }
+    .project__description--sub--title{
+        margin-bottom: 8px;
+    }
+    .modal__half{
+        padding: 40px;
+    }
+
+}
+   
