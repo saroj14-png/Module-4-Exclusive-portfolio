@@ -19,35 +19,35 @@
 </script>
   </head>
   <body>
-    <section id="langing-page">
+    <section id="langing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img src="./assets/logo.png" id="personal-logo" alt="logo" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
-            <a href="" class=
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class=
             "nav__link--anchor 
             link__hover-effect 
             link__hover-effect--black"
               >About</a>
           </li>
           <li class="nav__link">
-            <a href="" class=
+            <a href="#projects" class=
             "nav__link--anchor 
             link__hover-effect 
             link__hover-effect--black"
               >Projects</a>
           </li>
           <li class="nav__link" onclick="toggleModal()">
-            <a href="" class=
+            <a href="#" class=
             "nav__link--anchor 
             link__hover-effect 
             link__hover-effect--black"
               >Contact</a>
           </li>
           <li class="nav__link click" onclick="toggleContrast()">
-            <a href="" class=
+            <a href="#" class=
             "nav__link--anchor 
             link__hover-effect 
             link__hover-effect--black"
@@ -91,9 +91,11 @@
           </div>
         </div>
       </header>
+      <a href="#">
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
+      </a>
       <a href="#project" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -224,6 +226,44 @@
                 </div>
               </div>
             </li>
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="assets/blinker mockup.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, javascript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/saroj14-png"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://348a559a-4b66"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -258,7 +298,7 @@
             </a>
             <a
               href="https://348a559a-4b66-4078-b5b8-5a547f1c4f15.filesusr.com/ugd/4be07d_e65f19c629be427994069ac3a59357f6.pdf?index=true"
-              target="_blank"
+              target="_blank" onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
